@@ -9,7 +9,7 @@ const server = express();
 server.use(express.json());
 
 mongoose
-  .connect(`mongodb+srv://namisha_gurunani08:8bxdUEsSg3TKegIx@cluster0.bdb4odh.mongodb.net/`)
+  .connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ugkcmbj.mongodb.net/`)
   .then(() => {
     console.log("databasde connect successfully");
   })
