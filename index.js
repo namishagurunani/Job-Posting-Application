@@ -3,6 +3,7 @@ const router = require("./routes/job");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config()
+// console.log(process.env.DB_USERNAME,process.env.DB_PASSWORD);
 
 const server = express();
 
