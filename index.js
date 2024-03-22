@@ -1,3 +1,4 @@
+
 const express = require("express");
 const router = require("./routes/job");
 const mongoose = require("mongoose");
@@ -9,7 +10,7 @@ const server = express();
 server.use(express.json());
 
 mongoose
-  .connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ugkcmbj.mongodb.net/`)
+.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ugkcmbj.mongodb.net/`)
   .then(() => {
     console.log("databasde connect successfully");
   })
